@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Almacen 0099</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+
+    <nav>
+        <div class="subfranja">
+            <div class="despacho">
+                <i class="fa-solid fa-wheelchair-move fa-bounce"></i>
+                <h5>Despacho gratis a la Isla de Pascua</h5>
+            </div>
+        </div>
+        <div class="subnav">
+            <div class="Perfil">
+                <i class="fa-solid fa-robot fa-bounce fa-2xl"></i>
+                <h1>Gran AlmacEnd 0099</h1>
+            </div>
+            <div class="barrabusqueda">
+                <input class="barrasearch" type="Buscar" placeholder=" Busca aquí">
+            </div>
+            <div class="Links">
+                <ul>
+                    <li>
+                        <div class="div">
+                            <a href="">Inicia Sesión Perrin</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="Iconplus">
+                        <div id="Iconplus2">0</div>
+                            <button class="unicoBoton"><i class="fa-solid fa-basket-shopping fa-2xl"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="fotoback">
+            <div class="titulofotoback">
+                <h2>Gran AlmacEND 0099</h2>
+                <p>Descubre nuestros productos en nuestro nuevo almacen</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="todo">
+
+    <div class="barrafiltro">
+            <div>⭐Lo mas vendido</div>
+            <div>👁 Lo mas visto</div>
+            <div>👉 Lo reciente</div>
+            <div>😂 Lo mas funable</div>
+    </div>
+    
+        <div class="filtros">
+            <div class="encabezadoCheboxMarca">
+                <div class="tituloencabezadoChebox">
+                    <div class="filtrarProveedores">
+                        <h6>Filtrar por proveedor</h6>
+                    </div>
+                    <div class="iconoDespliguefiltro1">
+                        <i class="fa-solid fa-angles-down fa-fade"></i>
+                    </div>
+                </div> 
+                <div id="checkboxContainer"></div>
+            </div>
+            <div class="encabezadoCheboxCategoria">
+                <div class="tituloencabezadoChebox">
+                    <div class="filtrarProveedores">
+                        <h6>Filtrar por categoría</h6>
+                    </div>
+                    <div class="iconoDespliguefiltro1">
+                        <i class="fa-solid fa-angles-down fa-fade"></i>
+                    </div>
+                </div> 
+                
+                <div id="checkboxContainer2"></div>
+            </div>
+
+        </div>
+        <div class="datos" id="datos">
+            
+        </div>
+    </div>
+
+    <div id="modalCarrito" class="modal">
+        <div class="modal-content">
+            <span id="cerrarModal" class="cerrar">&times;</span>
+            <div class="tarjetaCarro">
+                <div class="tituloCarrito">Carrito de Compras</div>
+                <div class="encabezado">
+                    <div>SKU</div>
+                    <div>Producto</div>
+                    <div>Uni</div>
+                    <div>Valor</div>
+                </div>
+                <div class="informacion" id="informacion">
+                    <div id="informacion2"></div>
+                </div>
+                <div class="footerCarro">
+                    <div class="descuento">
+                        <div class="ingresaCupon">
+                            <h6>Cupón de descuento</h6>
+                        </div>
+                        <div class="barracupon">
+                            <input id="codigoDescuento" type="text" placeholder="Ingrese aqui">
+                        </div>
+                        <div class="botoncupon">
+                            <button class="botongo" onclick="aplicarDescuento()">Go!</button>
+                        </div>
+                    </div>
+                    <div class="Ahorro">
+                        <div id="ahorro2"></div>
+                    </div>
+                    <div class="total">
+                        <div id="total2">Total: $0</div>
+                    </div>
+                    <div id="totalConDescuento"></div>
+
+                    <div class="Pagar">
+                        <button class="boton"> Ir a pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+    <script src="https://kit.fontawesome.com/cb9cee40ce.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+*{
+    font-family: 'Roboto', serif;
+
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+input{
+    border-radius: 4px;
+    border: none;
+    font-style: italic;
+}
+
+.subfranja{
+    background-color: #352c7f;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.despacho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #edf1fd;
+    gap:10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 90px;
+/*     background: linear-gradient(90deg, rgba(255,126,0,1) 0%, rgba(251,128,7,1) 84%, rgba(244,143,0,1) 100%); */
+    background-color: #1d1841;
+    justify-content: space-between;   
+    position: fixed; /* Hace que el navbar sea fijo */
+    top: 0px; /* Ubicación en la parte superior de la pantalla */
+    z-index: 1000; /* Se asegura de que el navbar esté encima del resto del contenido */
+  }
+    
+
+button{
+    background-color: none;
+}
+
+.Perfil{
+    display: flex;
+    justify-content: center;
+    width:20%;
+    align-items: center;
+    color: #edf1fd;
+    gap:10px
+}
+
+.barrabusqueda{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    border:none;
+
+}
+
+.barrasearch{
+    width:100%;
+    border-radius: 4px;
+    height: 25px;
+    border: none;
+}
+.Links{
+    display: flex;
+    width:20%;
+    justify-content: flex-end;
+    padding: 0px 40px 0px 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+
+}
+.subnav{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    justify-content: space-between;
+    align-content: center;
+}
+nav h1{
+    padding-left: 20px;
+    color: aliceblue;
+
+}
+nav ul{
+    display:flex;
+    text-decoration: none;   
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+.slider{
+    width: 100%;
+    height: 600px;
+    background-color: #e3dffc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px 0px;
+}
+
+.fotoback{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 90%;
+    margin: 30px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url('/assets/img/SLIDER.jpg'); /* Especifica la ruta de la imagen */
+    background-size:120%;    /* Escala la imagen para cubrir todo el div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position:left; /* Centra la imagen en el div */
+    animation: zoomBackground 25s ease forwards;
+
+}
+
+@keyframes zoomBackground {
+    from {
+        background-size: 100%;  /* Tamaño inicial de la imagen */
+    }
+    to {
+        background-size: 120%;  /* Tamaño final de la imagen después del zoom */
+    }
+}
+
+
+.titulofotoback{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-start;
+    color: #fdfdfd;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+
+}
+
+.titulofotoback>h2{
+    margin:0px;
+    padding: 0px 0px 0px 40px;
+
+}
+
+.titulofotoback>p{
+    font-size: 1.5rem;
+    margin:0px;
+    padding: 0px 0px 0px 40px;
+
+}
+
+.todo{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap:10px;
+    padding: 20px;
+    position: relative;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,241,243,1) 55%, rgba(233,233,233,1) 100%);
+}
+
+.barrafiltro{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Esto posiciona la barra sobre el contenedor */
+    top: -55px; /*Ajustar la posición en el eje vertical */
+    left: 50%; /* Posicionada en el centro horizontal */
+    transform: translateX(-50%); /* Desplazada hacia la izquierda para que quede centrada */
+    width: 40%; 
+    height: 80px; 
+    background-color: #edf1fd; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle un efecto 3D */
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(149, 149, 149, 0.5);
+
+}
+
+.barrafiltro>*{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 0px 10px 0 10px;
+    border-left: solid black 1px;
+}
+
+.datos{
+    margin-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.tarjetaCarro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    min-width: 250PX;
+    background-color: #edf1fe;
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+.tituloCarrito{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    background-color: #1d1841;
+
+    color: aliceblue;
+    height: 40px;
+}
+
+.encabezado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: solid black 0.9px;
+    height: 40px;
+}
+
+.encabezado>*{
+    padding: 10px;
+    margin: 5px;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    padding: 20px;
+    max-height: 100%;
+    overflow-y:auto;
+
+}
+
+#informacion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    max-width: 100%;
+    gap: 30px;
+
+    
+}
+
+#informacion2>* {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0px 0px 10px 0px;
+
+}
+
+.footerCarro{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    background-color: #1d1841;
+    color: #e3dffc;
+    height: 30%;
+}
+
+.descuento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.total{
+    display: flex;
+    justify-content:flex-end;
+    padding: 0px 20px;
+}
+
+#totalConDescuento{
+    text-align: end;
+    padding: 0px 20px 2px 0px;
+    color:#00cf67;
+
+    }
+
+.Ahorro{
+    display: flex;
+    justify-content:flex-end;
+    padding: 0px 20px;
+    color: #f86300;
+
+}
+
+.Pagar{
+    display: flex;
+    justify-content: center;
+}
+
+.botoncupon{
+    padding: 0px 20px 0px 5px;
+}
+.botongo{
+
+    display: flex;
+    background: rgb(53,44,127);
+    background: radial-gradient(circle, rgba(53,44,127,1) 0%, rgba(67,56,163,1) 100%, rgba(69,57,152,1) 100%);
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 25px;
+    border-radius:9px;
+    color: #ffffff;
+    padding: 7px 0px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.ingresaCupon{
+    width: 100px;
+    padding: 0px 5px 0px 20px;
+}
+
+.barracupon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.barracupon>*{
+    width: 100%;
+}
+
+.tarjetaproducto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    height: 470px;
+/*     background-color: rgb(246, 246, 246); */
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-image: url(/assets/img/Patron.jpg);
+    background-size:contain;
+}
+
+#iconEliminar{
+    height: 20px;
+    width:  30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    color:red;
+}
+
+.sku{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin: 0px;
+    justify-content: space-around;
+}
+
+.titulo{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0px 15px 0px 15px;
+    padding:7px;
+}
+
+.precio{
+    width: 100%;
+    text-align: center;
+    color: #392c9e;
+    
+    
+}
+
+.marca{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    height: 20px;
+    width: 100%;
+    padding: 0px 10px 0px 0px;
+}
+
+
+.imagen{
+    height: 200px;
+    width: 200px;
+}
+
+.imgProducto{
+    
+    width: 200px;          /* La imagen toma todo el ancho del contenedor */
+    height: 200px;         /* La imagen toma toda la altura del contenedor */
+    object-fit:cover;    /* Ajusta la imagen dentro del div, recortando si es necesario */
+    object-position: center; /* Centra la imagen dentro del div */
+    border-radius: 5px;
+
+}
+
+.boton{
+
+    display: flex;
+    background: rgb(53,44,127);
+    background: radial-gradient(circle, rgba(53,44,127,1) 0%, rgba(67,56,163,1) 100%, rgba(69,57,152,1) 100%);
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    border-radius:9px;
+    color: #ffffff;
+    padding: 7px 0px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#btnRestar{
+    border: none;
+    color: #352c7f;
+    background: none;
+}
+#btnRestar:hover{
+    border: none;
+    color: #ff0000;
+    background: none;
+}
+
+#btnSumar:hover{
+    border: none;
+    color: #00b35a;
+    background: none;
+}
+
+#btnSumar{
+    border: none;
+    color: #352c7f;
+    background: none;
+}
+
+.unicoBoton{
+    border: none;
+    background: none;
+    color: aliceblue;
+}
+
+#Iconplus{
+    position: relative;
+    cursor: pointer;
+/*     visibility: hidden; */
+}
+#Iconplus2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 136, 48);
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    font-size: 0.8rem;
+    border: solid rgb(0, 0, 0) 1px;
+}
+.cantidad{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+}
+.numerocantidad{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+
+.filtros{
+    display: flex;
+    flex-direction: column;
+    display:flex;
+    flex-wrap: wrap;
+    min-width: 250px
+}
+
+.tituloencabezadoChebox{
+    background-color: #1d1841;
+    padding: 15px;
+    color: #e3dffc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtrarProveedores>h6{
+    margin:0 auto
+}
+
+.iconoDespliguefiltro1{
+    cursor: pointer;
+}
+#checkboxContainer{
+    padding: 10px;
+}
+
+#checkboxContainer2{
+    padding: 10px;
+}
+
+
+/* ------- */
+
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 400px; 
+    height: 100%;
+    background-color: none;
+    border:none;
+    overflow-y: hidden; 
+}
+
+.modal-content {
+    position: relative;
+    padding: 20px 0px;
+    height: 100%;
+}
+
+.cerrar {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgb(255, 98, 0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 1.08rem;
+
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #fff200;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ---------------------- */
+
+.tarjetaproducto {
+    opacity: 0;                  /* Oculta el contenido inicialmente */
+    transform: translateY(30px); /* Mueve el contenido hacia abajo */
+    transition: opacity 0.6s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Clase que se agrega cuando el contenido debe aparecer */
+.tarjetaproducto-activo {
+    opacity: 1;                /* Hace el contenido visible */
+    transform: translateY(0);  /* Lo devuelve a su posición original */
+}
+
+.filtros {
+    opacity: 0;                  /* Oculta el contenido inicialmente */
+    transform: translateY(30px); /* Mueve el contenido hacia abajo */
+    transition: opacity 0.6s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Clase que se agrega cuando el contenido debe aparecer */
+.filtros-activo {
+    opacity: 1;                /* Hace el contenido visible */
+    transform: translateY(0);  /* Lo devuelve a su posición original */
+}
